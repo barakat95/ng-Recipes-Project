@@ -9,9 +9,8 @@ export class ShoppingListService {
   startedEditing = new Subject<number>();
   ingredientChanged = new Subject<Ingredient[]>();
   private ingredients: Ingredient[] = [
-    new Ingredient("Apple", 5),
-    new Ingredient("Orange", 10),
-    new Ingredient("Tmatem", 15)
+    new Ingredient("cup self-rising flour", 1),
+    new Ingredient("cup non-fat greek yogurt (I recommend Fage)", 1)
   ];
   constructor() {}
 
