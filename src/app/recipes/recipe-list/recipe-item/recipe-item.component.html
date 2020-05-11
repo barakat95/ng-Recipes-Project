@@ -1,0 +1,29 @@
+<!-- <div class="card sm-12" style="max-width: 540px;">
+  <div class=" row no-gutters">
+    <div class="col-sm-8">
+      <div class="card-body">
+        <h5 class="card-title">{{recipe.name}}</h5>
+        <p class="card-text">{{recipe.description}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 70px;">
+  </div>
+</div> -->
+<!-- <a (click)="onItemSelected()" href="#" class="list-group-item clearfix">
+  <h5 class="list-group-item-heading">{{recipe.name}}</h5>
+  <p class="list-group-item-text">{{recipe.description}}</p>
+  <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 70px;">
+</a> -->
+
+<a style="cursor: pointer;" class="list-group-item clearfix p-auto" [routerLink]="[index]" routerLinkActive="active">
+  <div style="float: left;" class="col-sm-8">
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
+  </div>
+  <div style="float: right;" class="col-sm-4">
+    <img [src]="recipe.imagePath" alt="{{ recipe.name }}"
+      style="display: inline-block; height: 17vh; vertical-align: middle;">
+  </div>
+</a>
