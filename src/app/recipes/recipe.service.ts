@@ -31,10 +31,6 @@ export class RecipeService {
           "pounds boneless skinless chicken breasts, pounded ¼-inch thick ",
           1 / 2
         ),
-        new Ingredient(
-          "pounds boneless skinless chicken breasts, pounded ¼-inch thick (",
-          1 / 2
-        ),
         new Ingredient("tablespoons all-purpose flour", 3),
         new Ingredient("tablespoon olive oil", 1),
         new Ingredient("Freshly ground black pepper", 1)

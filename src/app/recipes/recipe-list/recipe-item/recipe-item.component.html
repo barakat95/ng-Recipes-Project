@@ -18,12 +18,12 @@
 </a> -->
 
 <a style="cursor: pointer;" class="list-group-item clearfix p-auto" [routerLink]="[index]" routerLinkActive="active">
-  <div style="float: left;" class="col-sm-8">
+  <div style="float: left;" class="col-sm-8 col-md-8 col-xs-4">
     <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
     <p class="list-group-item-text">{{ recipe.description }}</p>
   </div>
-  <div style="float: right;" class="col-sm-4">
+  <div style="float: right;" class="col-sm-4 col-md-4 col-xs-4">
     <img [src]="recipe.imagePath" alt="{{ recipe.name }}"
-      style="display: inline-block; height: 17vh; vertical-align: middle;">
+      style="display: inline-block; vertical-align: middle; width: 20vh;" class="img-responsive">
   </div>
 </a>
